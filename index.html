@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="img/png" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
-    <div class="options">
-      <p>Выберете варианты или введите свое время</p>
-      <div class="short">20 минут</div>
-      <div class="long">1 час</div>
-      <input type="time" class="user_time" step="1" id="1" />
-      <button class="ok">&#10004;</button>
-    </div>
-    <div class="container">
-      <div class="timer"></div>
-      <div class="container_buttons">
-        <button class="start">Start</button>
-        <button class="stop">Stop</button>
-        <button class="back">Back</button> <button class="reset">Reset</button>
+    <main>
+      <p>Выберете вариант или введите свое время</p>
+      <div class="options">
+        <div class="short button_type">20 минут</div>
+        <div class="long button_type">1 час</div>
+        <input type="time" class="user_time" step="1" id="1" />
+        <button class="ok">&#10004;</button>
       </div>
-    </div>
+      <div class="container">
+        <div class="timer"></div>
+        <div class="container_buttons">
+          <button class="start">Start</button>
+          <button class="stop">Stop</button>
+          <button class="back">Back</button>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>

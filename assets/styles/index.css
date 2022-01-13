@@ -1,6 +1,25 @@
 body {
-  background-color: lightgrey;
+  background-color: #6883bb;
   font-family: "Open Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
 }
 
 button {
@@ -50,9 +69,12 @@ button:disabled {
   opacity: 0.65;
 }
 
+p {
+  color: #dbe7f2;
+  font-size: 20px;
+}
+
 .container {
-  width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,6 +89,54 @@ button:disabled {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button_type {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 15px 15px 0;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #385898;
+  background-color: lightgray;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.button_type:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #666;
+          box-shadow: 0 0 0 2px #666;
+}
+
+.button_type:hover {
+  background-color: #dbe7f2;
+}
+
+.button_type:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
 }
 
 .timer {
