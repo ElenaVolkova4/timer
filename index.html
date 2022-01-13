@@ -11,12 +11,21 @@
   </head>
   <body>
     <main>
-      <p>Выберете вариант или введите свое время</p>
-      <div class="options">
-        <div class="short button_type">20 минут</div>
-        <div class="long button_type">1 час</div>
-        <input type="time" class="user_time" step="1" id="1" />
-        <button class="ok">&#10004;</button>
+      <div class="container_options">
+        <p>Выберете вариант или введите свое время</p>
+        <div class="options">
+          <div class="short button_type">20 минут</div>
+          <div class="long button_type">1 час</div>
+          <div class="user_time">
+            <input
+              type="time"
+              class="user_time_input button_type"
+              step="1"
+              id="1"
+            />
+            <button class="ok">&#10004;</button>
+          </div>
+        </div>
       </div>
       <div class="container">
         <div class="timer"></div>
@@ -31,5 +40,3 @@
     <script src="index.js"></script>
   </body>
 </html>
-
-3+6

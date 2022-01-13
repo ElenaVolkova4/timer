@@ -1,8 +1,8 @@
 let counterTime = 0;
 let timer;
 
+//экран таймера
 const timerScreen = document.querySelector(".timer");
-// const timerScreen = document.querySelector('input[type="time"]');
 
 //выбор времени
 const shortBtn = document.querySelector(".short");
@@ -65,17 +65,15 @@ const countUp = () => {
   counterTime++;
   displayTimer();
   if (counterTime > 0) {
-    timerScreen.style.border = "1px solid black";
+    timerScreen.style.border = "4px solid #dbe7f2";
   }
-  // console.log(counterTime);
 };
 
 // обратный отсчет
 const countDown = () => {
-  // console.log(counterTime);
   const newcounterTime = counterTime - 1;
   if (newcounterTime === 0) {
-    timerScreen.style.border = "1px solid red";
+    timerScreen.style.border = "4px solid #0d773d";
     counterTime--;
     clearInterval(timer);
   } else {
@@ -83,37 +81,37 @@ const countDown = () => {
       counterTime--;
     }
   }
-
   displayTimer();
 };
 
-//нажатия на кнопки
+//нажатия на кнопки таймера
 startBtn.addEventListener("click", () => {
   timer = clearInterval(timer);
   timer = setInterval(countUp, 1000);
   startBtn.disabled = true;
+  backBtn.disabled = false;
 });
 
 stopBtn.addEventListener("click", () => {
   timer = clearInterval(timer);
   startBtn.disabled = false;
+  backBtn.disabled = false;
 });
 
 resetBtn.addEventListener("click", () => {
   timer = clearInterval(timer);
   startBtn.disabled = false;
+  backBtn.disabled = false;
   counterTime = 0;
   displayTimer();
-  timerScreen.style.border = "1px solid black";
-
-  // console.log(counterTime);
+  timerScreen.style.border = "4px solid #dbe7f2;";
 });
 
 backBtn.addEventListener("click", () => {
-  // console.log(counterTime);
   timer = clearInterval(timer);
   timer = setInterval(countDown, 1000);
   startBtn.disabled = false;
+  backBtn.disabled = true;
 });
 
 displayTimer(); //чтобы на таймере всегда были цифры

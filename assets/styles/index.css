@@ -23,15 +23,9 @@ main {
 }
 
 button {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0 20px;
-  margin: 0 15px 15px 0;
-  outline: none;
   border: none;
   border-radius: 6px;
-  height: 40px;
   line-height: 40px;
   font-size: 17px;
   font-weight: 600;
@@ -39,15 +33,6 @@ button {
   color: #385898;
   background-color: #e7f3ff;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
 }
 
 button:focus-visible {
@@ -74,6 +59,22 @@ p {
   font-size: 20px;
 }
 
+.container_options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +96,17 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
 }
 
 .button_type {
@@ -102,11 +114,8 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 20px;
-  margin: 0 15px 15px 0;
-  outline: none;
   border: none;
   border-radius: 6px;
-  height: 40px;
   line-height: 40px;
   font-size: 17px;
   font-weight: 600;
@@ -114,15 +123,6 @@ p {
   color: #385898;
   background-color: lightgray;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
 }
 
 .button_type:focus-visible {
@@ -139,11 +139,41 @@ p {
           transform: scale(0.96);
 }
 
+.user_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
 .timer {
   width: 400px;
   height: 200px;
-  text-align: center;
-  border: 1px solid black;
-  font-size: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 4px solid #dbe7f2;
+  color: #dbe7f2;
+  font-size: 50px;
+  border-radius: 6px;
+}
+
+.container_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
 }
 /*# sourceMappingURL=index.css.map */
