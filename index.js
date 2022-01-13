@@ -10,6 +10,7 @@ const longBtn = document.querySelector(".long");
 const userTime = document.querySelector('input[type="time"]');
 const okBtn = document.querySelector(".ok");
 
+//кнопки выбора времени
 shortBtn.addEventListener("click", () => {
   counterTime = 1200;
   displayTimer();
@@ -21,24 +22,17 @@ longBtn.addEventListener("click", () => {
 });
 
 okBtn.addEventListener("click", () => {
-  // надо приравнять value введенное к числу
-  // counterTime = 3600;
+  counterTime = document.querySelector(".user_time_input").valueAsNumber / 1000;
   displayTimer();
 });
 
-// document.querySelector(".timer").value;
-
-// const timeControl = document.querySelector('input[type="time"]');
-// const customInput = document.querySelector(".timer2");
-// customInput.valueAsDate;
-
-//кнопки
+//кнопки таймера
 const startBtn = document.querySelector(".start");
 const stopBtn = document.querySelector(".stop");
 const resetBtn = document.querySelector(".reset");
 const backBtn = document.querySelector(".back");
 
-// формат отображения
+//формат отображения
 const displayTimer = () => {
   const hours = Math.floor(counterTime / 3600);
   const minutes = Math.floor((counterTime % 3600) / 60);
@@ -50,15 +44,7 @@ const displayTimer = () => {
 
   timerScreen.innerHTML =
     displayHours + ":" + displayMinutes + ":" + displaySeconds;
-  // timerScreen.value =
-  //   displayHours + ":" + displayMinutes + ":" + displaySeconds;
 };
-
-// console.log(document.getElementsByName("timer2"));
-// console.log(document.getElementById("1").value);
-
-// document.document.getElementsByName(".timer2").valueAsDate;
-// document.getElementsByName("timer2");
 
 //прямой отсчет
 const countUp = () => {
@@ -69,7 +55,7 @@ const countUp = () => {
   }
 };
 
-// обратный отсчет
+//обратный отсчет
 const countDown = () => {
   const newcounterTime = counterTime - 1;
   if (newcounterTime === 0) {
