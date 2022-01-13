@@ -51,7 +51,8 @@ const countUp = () => {
   counterTime++;
   displayTimer();
   if (counterTime > 0) {
-    timerScreen.style.border = "4px solid #dbe7f2";
+    timerScreen.classList.remove("green");
+    timerScreen.classList.add("white");
   }
 };
 
@@ -59,7 +60,8 @@ const countUp = () => {
 const countDown = () => {
   const newcounterTime = counterTime - 1;
   if (newcounterTime === 0) {
-    timerScreen.style.border = "4px solid #0d773d";
+    timerScreen.classList.remove("white");
+    timerScreen.classList.add("green");
     counterTime--;
     clearInterval(timer);
   } else {
@@ -90,7 +92,8 @@ resetBtn.addEventListener("click", () => {
   backBtn.disabled = false;
   counterTime = 0;
   displayTimer();
-  timerScreen.style.border = "4px solid #dbe7f2;";
+  timerScreen.classList.remove("green");
+  timerScreen.classList.add("white");
 });
 
 backBtn.addEventListener("click", () => {
