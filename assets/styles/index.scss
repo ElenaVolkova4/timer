@@ -107,6 +107,7 @@ p {
   &:active {
     transform: scale(0.96);
   }
+
   @media screen and (max-width: 500px) {
     font-size: 14px;
     padding: 0 15px;
@@ -151,7 +152,32 @@ p {
   flex-wrap: wrap;
 
   @media screen and (max-width: 500px) {
-    // flex-direction: column;
     gap: 5px;
+  }
+}
+.user_time_input {
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(56, 88, 152);
+  background-color: lightgray;
+  cursor: pointer;
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px rgb(102, 102, 102);
+  }
+  &:hover {
+    background-color: rgb(219, 231, 242);
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
   }
 }

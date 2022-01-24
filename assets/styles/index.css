@@ -229,4 +229,38 @@ p {
     gap: 5px;
   }
 }
+
+.user_time_input {
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #385898;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.user_time_input:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #666666;
+          box-shadow: 0 0 0 2px #666666;
+}
+
+.user_time_input:hover {
+  background-color: #dbe7f2;
+}
+
+.user_time_input:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+@media screen and (max-width: 500px) {
+  .user_time_input {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
