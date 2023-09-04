@@ -9,3 +9,6 @@
 - JavaScript (ES2019)
 
 ![gif](https://github.com/ElenaVolkova4/timer/blob/main/assets/images/%D1%82%D0%B0%D0%B9%D0%BC%D0%B5%D1%80.gif)
+
+
+Demo: https://elenavolkova4.github.io/timer/
